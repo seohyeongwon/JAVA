@@ -1,0 +1,43 @@
+
+package org.comstudy.ch04;
+
+import java.util.Scanner;
+
+public class zxc {
+	static Scanner scan = new Scanner(System.in);
+	static int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	static int month;
+	static int total = 0;
+
+	public static void main(String[] args) {
+		int day;
+		System.out.print("what month?");
+		month = scan.nextInt();
+		System.out.print("what day?");
+		day = scan.nextInt();
+		int daycount = 0;
+		for (int i = month - 1; i < month + 2; i++) {
+			if (i >= 12) {
+				i -= 12;
+			}
+			;
+			daycount += days[i];
+		}
+		if (day + (100 - daycount) > days[(month > 9 ? month - 12 : month) + 3]) {
+			month += 4;
+			if (month > 12) {
+				month -= 12;
+			}
+			;
+			day = day + (100 - daycount) - days[month - 1];
+		} else {
+			month += 3;
+			if (month > 12) {
+				month -= 12;
+			}
+			;
+			day = day + (100 - daycount);
+		}
+		System.out.println("100일 후는 " + month + "월" + day + "일입니다.");
+	}
+}

@@ -1,0 +1,11 @@
+package Ch02_;
+
+public class ca02_ex01 {
+
+	public static void main(String[] args) {
+		
+		ch02_ex.main(args); 
+
+	}
+
+}

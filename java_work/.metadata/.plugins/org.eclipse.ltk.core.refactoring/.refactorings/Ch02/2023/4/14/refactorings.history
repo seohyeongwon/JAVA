@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Ch02_.ch02ex08&apos; to &apos;ch02ex08home&apos;&#x0D;&#x0A;- Original project: &apos;Ch02&apos;&#x0D;&#x0A;- Original element: &apos;Ch02_.ch02ex08&apos;&#x0D;&#x0A;- Renamed element: &apos;Ch02_.ch02ex08home&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ch02ex08&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Ch02_{ch02ex08.java[ch02ex08" matchStrategy="1" name="ch02ex08home" qualified="false" references="true" similarDeclarations="false" stamp="1680527335793" textual="false" version="1.0"/>
+</session>

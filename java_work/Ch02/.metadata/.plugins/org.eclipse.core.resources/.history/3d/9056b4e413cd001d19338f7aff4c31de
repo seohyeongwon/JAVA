@@ -1,0 +1,28 @@
+package Ch02_;
+
+import java.util.Scanner;
+public class ch02_ex03 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("세로"+"가로");
+		Scanner scan = new Scanner(System.in);
+		
+	
+		
+		double width = 0.0;
+		double height = 0.0;
+		double area = 0.0;
+		
+		
+		width = scan.nextDouble();
+		height = scan.nextDouble();
+		
+		area=width*height;
+		
+		System.out.print("넒이"+ area);
+		
+		scan.close();
+	}
+
+}

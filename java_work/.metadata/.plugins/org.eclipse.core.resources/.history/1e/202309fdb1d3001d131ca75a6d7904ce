@@ -1,0 +1,13 @@
+package Ch03home;
+
+public class ch03ex04 {
+
+	public static void main(String[] args) {
+		int sum=0;
+		for(int i=1 ; i<=100;i++) {
+			System.out.println(i);
+			sum+=i;
+		}
+	}
+
+}

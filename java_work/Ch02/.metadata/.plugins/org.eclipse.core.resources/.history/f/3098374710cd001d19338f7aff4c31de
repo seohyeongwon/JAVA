@@ -1,0 +1,26 @@
+package Ch02_;
+
+import java.util.Scanner;
+
+public class ch02_ex02 {
+    
+	public static Scanner scan;
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("반지름은?");
+		
+		double r = .0;
+		double area = .0;
+		double line = .0;
+		
+		double cir = r*r*3.14;
+		double line2 = 2*line*r;
+		
+		System.out.println("원의 넒이:"+ area);
+		System.out.println("원의 둘레:"+ line);
+
+	}
+
+}

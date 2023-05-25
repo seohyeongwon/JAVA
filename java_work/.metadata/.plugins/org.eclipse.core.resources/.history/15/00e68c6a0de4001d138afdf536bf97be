@@ -1,0 +1,47 @@
+package org.comstudy.ch04;
+
+import java.util.Scanner;
+import static java.lang.System.out;
+
+public class ch04ex01 {
+	public static final Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		int total = 0;
+		int month = 0;
+		int day = 0;
+		// days의 모든 요소 값을 total에 누적 해 보기
+		for (int i = 0; i < days.length; i++) {
+			total += days[i];
+		}
+
+		// 1년은 365일입니다.
+		out.printf("1년은 %d일입니다.\n", total);
+
+		out.print("월 입력: ");
+		month = scan.nextInt();
+		out.print("일 입력: ");
+		day = scan.nextInt();
+
+		// 2월은 28일까지 있습니다.
+		out.printf("%d %d \n", month, days[month - 1]);
+
+		total = 0;
+		for (int i = 0; i < month - 1; i++) {
+			total += days[i];
+		}
+		total += day;
+		out.printf("1/1 ~ %d/%d %d \n", month, day, total);
+
+		total = days[month - 1] - day;
+		for (int i = month; i < 12; i++) {
+			total += days[i];
+		}
+		out.printf("%d %d ~ 12 31 %d \n", month, day, total);
+		
+		
+		month = days[month-1] +100
+		out.printf("4/10 100day %d %d \n", month,day);
+	}
+}

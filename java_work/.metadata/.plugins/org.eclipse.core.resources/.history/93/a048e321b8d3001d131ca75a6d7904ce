@@ -1,0 +1,39 @@
+package Ch03home;
+import java.util.Scanner;
+
+public class ch03ex04 {
+public static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		int count=0, sum=0;
+		System.out.println("정수 입력 마지막 -1");
+		
+		int n = scan.nextInt();
+		while(n!=-1) {
+			sum+=n;
+			count++;
+			n = scan.nextInt();
+		}
+		if(count==0) {
+			System.out.println("num x");
+		}else {
+			System.out.print("정수"+count);
+			System.out.println("평균"+(double)sum/count);
+		}
+		scan.close();
+	}
+
+	public static void main01(String[] args) {
+		int sum=0;
+		for(int i=1 ; i<=10;i++) {
+			System.out.print(i);
+			sum+=i;
+			if(i<=9) {
+				System.out.print("+");
+			}else {
+				System.out.print("=");
+				System.out.println(sum);
+			}
+		}
+	}
+
+}

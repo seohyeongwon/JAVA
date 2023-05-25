@@ -1,0 +1,24 @@
+
+package org.comstudy.ch04;
+
+import java.util.Scanner;
+
+public class zxc {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		int input;
+		System.out.println("숫자>>>문자");
+		input = scan.nextInt();
+		switch(input) {
+		case 1:
+			System.out.println("one");
+			break;
+		case 2:
+			System.out.println("two");
+			break;
+		default:
+			System.out.println("err");
+			break;
+		}
+	}
+}
